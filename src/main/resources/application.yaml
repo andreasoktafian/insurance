@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: purchase-order
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+
+  threads:
+    virtual:
+      enabled: true
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
